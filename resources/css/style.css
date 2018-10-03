@@ -30,6 +30,11 @@ html {
   .main-content {
     top: 2.5625rem;
   }
+
+@media only screen and (max-width: 450px) {
+  .main-content {
+    overflow: hidden;
+    }
 }
 
 /* Header */
@@ -130,7 +135,7 @@ header .mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+
   }
 
   header .mobile li {
@@ -243,12 +248,25 @@ header .mobile {
     height: 20rem;
   }
 
+  #sign-up-cta {
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sign-up-cta .content{
+    width: 100%;
+  }
+
   #sign-up-cta h1 {
     font-size: 2.25rem;
   }
 
   #sign-up-cta h2 {
     font-size: 2rem;
+    text-align: center;
   }
 }
 
