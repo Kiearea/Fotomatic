@@ -30,6 +30,7 @@ html {
   .main-content {
     top: 2.5625rem;
   }
+}
 
 @media only screen and (max-width: 450px) {
   .main-content {
@@ -448,7 +449,7 @@ header .mobile {
     height: 7rem;
   }
 
-  #filters-section .image-container-extra {
+  #filters-section .extra {
     display: none;
   }
 
@@ -504,6 +505,25 @@ header .mobile {
   }
 }
 
+@media only screen and (max-width: 450px) {
+    #quotes-section {
+      padding: 1.5rem 0rem;
+    }
+
+    #quotes-section .content {
+      display: flex;
+      flex-direction: column;
+      padding: 0rem;
+    }
+
+    #quotes-section .quote {
+      font-size: 1.5rem;
+      line-height: 1.4;
+      padding: 1rem;
+      text-align: center;
+    }
+}
+
 /* Footer */
 
 footer {
@@ -517,21 +537,36 @@ footer .content {
   height: 3.875rem;
 }
 
-footer .copyright {
-  margin: 0 2rem;
+footer .content .copyright {
+  margin-left: 2rem;
   font-family: Roboto;
   font-size: 0.75rem;
 }
 
-footer .location {
+footer .content .location {
   margin-left: auto;
   margin-right: 2rem;
   font-family: Roboto;
   font-size: 0.75rem;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 760px) {
   footer .content {
     font-size: .625rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  footer .content {
+    font-size: .625rem;
+    font-weight: normal;
+  }
+
+  footer .content .copyright {
+    margin-left: 1rem;
+  }
+
+  footer .content .location {
+    margin-right: 1rem;
   }
 }
